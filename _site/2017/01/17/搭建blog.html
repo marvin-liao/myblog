@@ -1,0 +1,58 @@
+<h1 id="搭建blog的一个实例">搭建blog的一个实例</h1>
+
+<p>** 在搭建以前，你必须已经安装git，且拥有自己的github账户 **</p>
+
+<h2 id="创建项目">创建项目</h2>
+
+<ul>
+  <li>在电脑上建立一个目录作为项目的主目录，假定名称为myblog</li>
+</ul>
+
+<p><code class="highlighter-rouge">$ mkdir myblog</code></p>
+
+<ul>
+  <li>对该目录进行git初始化</li>
+</ul>
+
+<p><code class="highlighter-rouge">$ cd myblog</code>
+<code class="highlighter-rouge">$ git init</code></p>
+
+<ul>
+  <li>创建并切换到一个没有父节点的分支gh-pages</li>
+</ul>
+
+<p><code class="highlighter-rouge">$ git checkout --orphan gh-pages</code></p>
+
+<h2 id="创建设置文件">创建设置文件</h2>
+
+<ul>
+  <li>在项目根目录下创建一个名为_config.yml的文件，里面所填内容如下</li>
+</ul>
+
+<p><code class="highlighter-rouge">baseurl:/myblog</code></p>
+
+<h2 id="创建模板文件">创建模板文件</h2>
+
+<ul>
+  <li>在项目根目录下创建一个_layouts目录，用于存放模板文件</li>
+</ul>
+
+<p><code class="highlighter-rouge">$ mkdir _layouts</code></p>
+
+<ul>
+  <li>进入该目录，创建一个default.html的文件作为默认模板</li>
+</ul>
+
+<p>`&lt;!DOCTYPE html&gt;
+　 &lt;html&gt;
+　 &lt;head&gt;
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+　　　　<title>搭建blog</title>
+　 &lt;/head&gt;
+　 &lt;body&gt;</p>
+
+<p>　　　　</p>
+
+<p>　 &lt;/body&gt;
+　 &lt;/html&gt;`</p>
+
